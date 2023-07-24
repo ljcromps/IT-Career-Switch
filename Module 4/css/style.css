@@ -1,0 +1,32 @@
+h2{
+    color: yellow;
+    background-color: red;
+    font-family: arial, "comic Sans", calibri;
+    font-size: 3em;
+    text-align: center; 
+    /* this will help to align elements ^ev */
+}
+
+#container {
+    color: black;
+}
+/* this ID selector will only apply styling to the first element with this ID */
+.accent {
+    background-color: yellow;
+    color: gray;
+}
+
+/* the accent has affected both elements with the same class selector */
+
+body main div {
+
+    color: white;
+}
+
+footer{
+
+    background-color: rgb(150, 241, 173);
+
+    color:#bf51e3
+
+}
