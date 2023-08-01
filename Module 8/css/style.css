@@ -8,7 +8,6 @@ header img {
     max-width: 500px;
     margin-top: -3.0em;
     margin-bottom: -4.0em;
-    background-color: plum;
 }
 
 nav {
@@ -51,10 +50,10 @@ width: 100%;
 height: auto;
 }
 Main {
-    /*background-color: white;
-    margin-top: 1em; /* margin puts some spaces between elements 
+    background-color: white;
+    margin-top: 1em; /* margin puts some spaces between elements */
     border-top: solid 0.3em black;
-    border-bottom: solid 0.3em black; */
+    border-bottom: solid 0.3em black; 
     background-image: linear-gradient(white, black);
     border-radius: 1em; /* radius rounds the corners of elements; */
     margin-bottom: 1em;;
@@ -74,19 +73,24 @@ main div .left {
     width: 20%;
     padding: 10px;
     float: left;
-    border-right: 3px solid black;
+    
 }
 
 main div .center {
     width: 35%;
    padding: 10px;
-}
 
+}
+.column.centre {
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+}
 main div .right {
-    width: 30%;
+
     padding: 10px;
     float: right;
-    border-left: 3px solid black;
+    
+    
 }
 
 footer {
