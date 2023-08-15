@@ -1,20 +1,26 @@
 body{
-background-image: linear-gradient(white, black);
+background-image: linear-gradient(white, grey);
 }
 
 header img {
     width: 100%;  /* This stretches the image across the viewport */
     height: auto;  /* The height will change based on the viewport */
-    max-width: 500px;
     margin-top: -3.0em;
-    margin-bottom: -4.0em;
+    margin-bottom: -1.0em;
+    display: flex;
+   
 }
 
+
 nav {
-    border-radius: 1.0em; /* radius rounds the corners of elements; */
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    /*border-radius: 1.0em; /* radius rounds the corners of elements; */
     margin-bottom: 1em;
+
     font-weight: bold;
     text-align: Center;
+    
 }
 
 
@@ -22,6 +28,7 @@ nav ul {
     padding: 0%;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
+    
 }
 
 nav ul li {
@@ -52,13 +59,15 @@ height: auto;
 Main {
     background-color: white;
     margin-top: 1em; /* margin puts some spaces between elements */
-    border-top: solid 0.3em black;
+   /* border-top: solid 0.3em black;
     border-bottom: solid 0.3em black; 
     border-left: solid 5px black;
-    border-right: solid 5px black;
-    background-image: linear-gradient(white, black);
+    border-right: solid 5px black;*/
+    background-image: linear-gradient(white, white, rgb(101, 101, 101));
+    min-height: 300px;
     border-radius: 1em; /* radius rounds the corners of elements; */
-    margin-bottom: 1em;;
+    margin-bottom: 1em;
+    box-shadow: 0.5em 0.5em 0.5em black;
 }
 
 main .row:after {
@@ -96,11 +105,15 @@ main div .right {
 }
 
 footer {
-    background-color: white;
+    background-image: linear-gradient(to right, white, grey);
     margin-top: 1em; /* margin puts some spaces between elements */
-    border-top: solid 0.3em black;
+    /*border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
+    border-left: solid 0.3em black;
+    border-right: solid 0.3em black;*/
+    box-shadow: 0.5em 0.5em 0.5em black;
     border-radius: 1em; /* radius rounds the corners of elements; */
+    text-align: center;
 }
 /*Begin mobile.*/
 @media screen and (max-width: 639px) {
@@ -128,6 +141,10 @@ footer {
     nav ul li {
         display: inline-block; /*this lists items horizontally and allows them to stretch*/ 
         border-radius: 20em;
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+    figure {
+        box-shadow: 0.5em 0.5em 0.5em black;
     }
    .desktop {
        display: none;
@@ -145,15 +162,26 @@ footer {
     
     header {
         text-align: left;
+        background-color: black;
     }
 
     Header img {
-        width: auto;
+        width: 50%;
         height: 20.1em;
+        background-image: linear-gradient(to right,white, grey,black,black);
+      
     }
     nav {
-        margin-top: -4.2em; /* this moves the nav element above where it woukld normally be*/
-        width: 60%;
+
+        background-color: black;
+        border-top: 5em;
+        border-bottom: 20em;
+        margin-top: -17.2em; /* this moves the nav element above where it woukld normally be*/
+        margin-bottom: 1em;
+        width: 58%;
+
+        padding-top: 5%;
+        padding-bottom: 5%;
         float: right; /* this floats the nav element to the right side of the page*/
         
     }
