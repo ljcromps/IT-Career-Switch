@@ -54,6 +54,8 @@ Main {
     margin-top: 1em; /* margin puts some spaces between elements */
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black; 
+    border-left: solid 5px black;
+    border-right: solid 5px black;
     background-image: linear-gradient(white, black);
     border-radius: 1em; /* radius rounds the corners of elements; */
     margin-bottom: 1em;;
@@ -81,8 +83,9 @@ main div .left {
 
 }*/
 .column.centre {
-    border-right: 10px solid black;
-    border-left: 10px solid black;
+   /* border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-radius: 0.75em;*/
 }
 main div .right {
 
@@ -131,6 +134,7 @@ footer {
    }
    main div .column.centre {
     width: 60%;
+    border-right: solid 5px black;
    }
 }
 
@@ -164,6 +168,12 @@ footer {
     }
     main div .column.centre {
         width: 60%;
+        border-right: solid 5px black;
+        border-left: solid 5px black;
+    }
+    main div .colum.left {
+        width: 20%;
+    
     }
 }
 
