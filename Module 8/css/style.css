@@ -76,11 +76,10 @@ main div .left {
     
 }
 
-main div .center {
-    width: 35%;
-   padding: 10px;
+/*main div .center {
+    width: 10%;
 
-}
+}*/
 .column.centre {
     border-right: 10px solid black;
     border-left: 10px solid black;
@@ -130,6 +129,9 @@ footer {
    .desktop {
        display: none;
    }
+   main div .column.centre {
+    width: 60%;
+   }
 }
 
 /*End tablet./*
@@ -159,6 +161,9 @@ footer {
 
     .desktop {
         display: block;
+    }
+    main div .column.centre {
+        width: 60%;
     }
 }
 
