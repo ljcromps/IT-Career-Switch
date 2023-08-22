@@ -1,0 +1,227 @@
+body{
+background-image: linear-gradient(white,black);
+}
+
+header img {
+    width: 100%;  /* This stretches the image across the viewport */
+    height: auto;  /* The height will change based on the viewport */
+    margin-top: -3.0em;
+    margin-bottom: -1.0em;
+    display: flex;
+   
+}
+
+
+nav {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    /*border-radius: 1.0em; /* radius rounds the corners of elements; */
+    margin-bottom: 1em;
+
+    font-weight: bold;
+    text-align: Center;
+    
+}
+
+
+nav ul {
+    padding: 0%;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    
+}
+
+nav ul li {
+    background-color: black;
+    padding: 1em;
+    min-width: 12%;
+    margin: .25em;
+    list-style-type: none; /*this removes bullet points*/
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* this will remove the underline from the hyperlink*/
+
+}
+
+figure {
+    text-align: center;
+    background-color: rgb(124, 70, 216);
+}
+
+figure img {
+max-width: 800px;
+max-height: 600px;
+width: 100%;
+height: auto;
+}
+Main {
+    padding-left: 1em;
+    background-color: white;
+    margin-top: 1em; /* margin puts some spaces between elements */
+    background-image: linear-gradient(white, white, rgb(101, 101, 101));
+    min-height: 300px;
+    border-radius: 1em; /* radius rounds the corners of elements; */
+    margin-bottom: 1em;
+    box-shadow: 0.5em 0.5em 0.5em black;
+}
+
+/*This was fof our 3-column layout*/
+
+main .row:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+
+main div .column {
+    float: left;
+}
+
+main div .left {
+    width: 20%;
+    padding: 10px;
+    float: left;
+    
+}
+
+main div .right {
+
+    padding: 10px;
+    float: right;
+    
+    
+}
+/*3-column layout end*/
+
+/*.schedule table begin*/
+
+.schedule table {
+    padding: 10px;
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: 2%;
+    background-color: white;
+}
+
+.schedule table, caption {
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.scheudle tr,th {
+    border: 0.1em solid black;
+    background-color: black;
+    color: white;
+}
+.scheudle th, td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+
+/*.schedue table end*/
+
+footer {
+    background-image: linear-gradient(to right, white, grey);
+    margin-top: 1em; /* margin puts some spaces between elements */
+    box-shadow: 0.5em 0.5em 0.5em black;
+    border-radius: 1em; /* radius rounds the corners of elements; */
+    text-align: center;
+}
+/*Begin mobile.*/
+@media screen and (max-width: 639px) {
+   
+    nav ul li {
+        border-radius: 1em;
+
+    }
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+}
+
+/*End mobile./*
+
+/*Begin tablet.*/
+@media screen and (min-width: 640px) {
+    header img {
+    margin-left: -2.15em;  
+    
+    }
+    nav ul li {
+        display: inline-block; /*this lists items horizontally and allows them to stretch*/ 
+        border-radius: 20em;
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+    figure {
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+   .desktop {
+       display: none;
+   }
+   main div .column.centre {
+    width: 60%;
+    border-right: solid 5px black;
+   }
+}
+
+/*End tablet./*
+
+/*Begin desktop.*/
+@media screen and (min-width: 960px) {
+    
+    header {
+        text-align: left;
+        background-color: black;
+        box-shadow: 0.5em 0.5em 0.5em,black;
+    }
+
+    Header img {
+        width: 50%;
+        height: 20.1em;
+        background-image: linear-gradient(to right,white, grey,black,black);
+        box-shadow: 0.5em 0.5em 0.5em,black;
+    }
+    nav {
+
+        background-color: black;
+        border-top: 5em;
+        border-bottom: 20em;
+        margin-top: -17.2em; /* this moves the nav element above where it woukld normally be*/
+        margin-bottom: 1em;
+        width: 58%;
+
+        padding-top: 5%;
+        padding-bottom: 5%;
+        float: right; /* this floats the nav element to the right side of the page*/
+        
+    }
+    nav ul li {
+        display: inline-block; /*this lists items horizontally and allows them to stretch*/ 
+        border-radius: 1em;
+
+    }
+
+    .desktop {
+        display: block;
+    }
+    main div .column.centre {
+        width: 60%;
+        border-right: solid 5px black;
+        border-left: solid 5px black;
+    }
+    main div .colum.left {
+        width: 20%;
+    
+    }
+}
+
+/*End desktop./*
+    

@@ -1,5 +1,5 @@
 body{
-background-image: linear-gradient(white, grey);
+background-image: linear-gradient(white,black);
 }
 
 header img {
@@ -57,6 +57,7 @@ width: 100%;
 height: auto;
 }
 Main {
+    padding-left: 1em;
     background-color: white;
     margin-top: 1em; /* margin puts some spaces between elements */
    /* border-top: solid 0.3em black;
@@ -91,11 +92,11 @@ main div .left {
     width: 10%;
 
 }*/
-.column.centre {
-   /* border-right: 5px solid black;
+/*.column.centre {
+    border-right: 5px solid black;
     border-left: 5px solid black;
-    border-radius: 0.75em;*/
-}
+    border-radius: 0.75em;
+}*/
 main div .right {
 
     padding: 10px;
@@ -163,13 +164,14 @@ footer {
     header {
         text-align: left;
         background-color: black;
+        box-shadow: 0.5em 0.5em 0.5em,black;
     }
 
     Header img {
         width: 50%;
         height: 20.1em;
         background-image: linear-gradient(to right,white, grey,black,black);
-      
+        box-shadow: 0.5em 0.5em 0.5em,black;
     }
     nav {
 
